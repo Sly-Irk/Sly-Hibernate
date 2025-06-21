@@ -25,7 +25,7 @@ public class Util {
                     .setProperty("hibernate.connection.username", LOGIN)
                     .setProperty("hibernate.connection.password", PASS)
                     .setProperty("hibernate.dialect", "org.hibernate.dialect.MySQLDialect")
-                    //.setProperty("hibernate.hbm2ddl.auto", "none")
+                    .setProperty("hibernate.hbm2ddl.auto", "none")
                     .addAnnotatedClass(User.class);
 
             ServiceRegistry serviceRegistry = new StandardServiceRegistryBuilder()
